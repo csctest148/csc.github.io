@@ -250,12 +250,20 @@
                         <!-- page 6 (contact me) -->
                         <div class="page-back">
                             <h1 class="title">Contact Me!</h1>
+                            <script>
+                                 function myFunction() {
+                                      
+					window.alert("Thank you! your message is sent successfully.");
+									
+                                }
+						
+                            </script>
                             <div class="contact-box">
-                                <form action="#">
-                                    <input type="text" class="field" placeholder="Full Name" required>
-                                    <input type="email" class="field" placeholder="Email Address" required>
-                                    <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
-                                    <input type="submit" class="btn" value="Send Message">
+                                <form method = "post" action ="https://script.google.com/macros/s/AKfycbwGVoA641en4aRVkrcqI8HEP1WkglGUATyowTy4FclsEDa7WY67MHKbFmYDxbaBqFTn/exec" name = "contact-form">
+                                    <input type="text" class="field" name = "Full_Name" placeholder="Full Name" required>
+                                    <input type="email" class="field" name = "Email_Address" placeholder="Email Address" required>
+                                    <textarea name="Your_Message" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                                    <input type="submit" class="btn" value="Send Message" onclick = "myFunction()" id = "submit">
                                 </form>
                             </div>
 
